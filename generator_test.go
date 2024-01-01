@@ -63,6 +63,10 @@ func Test_genTypeName(t *testing.T) {
 			"var thing float64",
 		},
 		{
+			`{"type": "f32"}`,
+			"var thing float32",
+		},
+		{
 			`{"type": "u128"}`,
 			"var thing binary.Uint128",
 		},

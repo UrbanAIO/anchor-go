@@ -44,6 +44,8 @@ func typeStringToType(ts IdlTypeAsString) *Statement {
 		stat.Uint64()
 	case IdlTypeI64:
 		stat.Int64()
+	case IdlTypeF32:
+		stat.Float32()
 	case IdlTypeF64:
 		stat.Float64()
 	case IdlTypeU128:
